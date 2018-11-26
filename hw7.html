@@ -1,0 +1,53 @@
+<!--
+Name: Fanyou Meng
+Email: Fanyou_Meng@student.uml.edu
+
+91.61 GUI Programming I
+Assignment 7:  Using the jQuery Validation Plugin with Your Dynamic Table
+Fanyou Meng, UMass Lowell Computer Science, Fanyou_Meng@student.uml.edu
+Copyright (c) 2018 by Fanyou Meng.  All rights reserved.  May be
+freely copied or excerpted for educational purposes with credit to the author.
+               updated by F.M. on November 25, 2018
+Description: Using jQuery plugin validate to test user inputs and creating a mutplication table in the GUI Programming I
+-->
+
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head>
+    <title>Hw7</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/hw7.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="js/hw7js.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/BB3C81AB-5864-45D3-A355-8F7C9C184DFC.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Fanyou Meng
+      </a>
+    </nav>
+    <div id ="container">
+      <p>Please enter two bounding numbers for both horizontal row and vertical column, then press the "Submit form" button to submit the form.</p>
+      <p>The four bounding numbers should be integers and all in the range of [1, 500].</p>
+      <p>The 1st bounding number doesn't have to be bigger than the 2nd bounding number.</p>
+      <form id="myForm" onsubmit="return myFunction()">
+        Horizontal 1st bound: <input type="text" id="Hlower" name="Hlower"><br>
+        Horizontal 2nd bound: <input type="text" id="Hlarger" name="Hlarger"><br>
+        Vertical 1st bound: <input type="text" id="Vlower" name="Vlower"><br>
+        Vertical 2nd bound: <input type="text" id="Vlarger" name="Vlarger"><br><br>
+        <input type="submit" value="Submit form">
+      </form>
+    </div>
+
+    <div class="container" id = "box">
+      <table class="table table-dark table-striped table-bordered" id="demo">
+      </table>
+    </div>
+
+  </body>
+</html>

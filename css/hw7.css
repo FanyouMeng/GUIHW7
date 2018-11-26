@@ -1,0 +1,30 @@
+/*
+ Name: Fanyou Meng
+ Email: Fanyou_Meng@student.uml.edu
+
+ 91.61 GUI Programming I
+ Assignment 7:  Using the jQuery Validation Plugin with Your Dynamic Table
+ Description: This is the css file for Assignment 7.
+It tries to simply style the web page.
+ */
+
+body {
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container{
+  padding-left: 50px;
+}
+label.error {
+    color: red;
+    font-style: italic;
+}
+input.error {
+    border: 1px dotted red;
+}
